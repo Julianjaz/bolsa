@@ -70,5 +70,5 @@ def save_news_to_parquet(df: pd.DataFrame, filename: str):
 
 
 if __name__ == "__main__":
-    df_news = get_news_by_date_range("NVIDIA", "2022-01-01", "2024-12-31")
+    df_news = get_news_by_date_range("NVIDIA", "2025-05-01", "2025-07-21")
     save_news_to_parquet(df_news, "nvidia_news.parquet")
