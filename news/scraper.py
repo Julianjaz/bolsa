@@ -67,8 +67,3 @@ def save_news_to_parquet(df: pd.DataFrame, filename: str):
     df.to_parquet(filename, index=False)
     logging.info(f"Se guardaron {len(df)} noticias en {filename}")
 
-
-
-if __name__ == "__main__":
-    df_news = get_news_by_date_range("NVIDIA", "2025-05-01", "2025-07-21")
-    save_news_to_parquet(df_news, "nvidia_news.parquet")
