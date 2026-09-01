@@ -28,4 +28,5 @@ def obtener_datos_accion(ticker="NVDA", fecha_inicio="2022-01-01", fecha_fin="20
 if __name__ == "__main__":
 
     df_stock = obtener_datos_accion("NVDA", "2025-05-01", "2025-07-21")
+    print(df_stock)
     df_stock.to_parquet("datos_stock.parquet")
